@@ -30,9 +30,10 @@ y apuntan a la ficha. No hace falta tocar el HTML.
 
 ## Antes de subirlo, revisá
 
-1. **El mail de contacto.** Está puesto `mail@tuerquita.com` en la landing (footer) y en la política de
-   privacidad (puntos 1, 8, 9 y 14). Si la casilla real es otra, buscá y reemplazá `mail@tuerquita.com`
-   en `index.html` y `privacidad.html`.
+1. **El mail de contacto.** Se usan tres casillas bajo `mail.tuerquita.com`: `ayuda@` para contacto
+   general (footer de `index.html`, `privacidad.html` y `eliminar-cuenta.html`), `privacidad@` para
+   ejercicio de derechos y consultas sobre la política (puntos 1 y 9), y `baja@` para pedidos de baja
+   de cuenta (punto 8 y `eliminar-cuenta.html`). Si las casillas reales son otras, buscá y reemplazá.
 2. **El dominio.** `tuerquita.com` aparece en las etiquetas `canonical`, `og:image`, `robots.txt` y
    `sitemap.xml`. Cambialo si vas a usar otro.
 3. **La política de privacidad.** Está escrita sobre lo que me contaste: cuenta con mail y contraseña o
