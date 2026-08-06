@@ -1,0 +1,6 @@
+:root{
+  --ease-out:cubic-bezier(0,0,.58,1); /* @kind other */ /* Curves.easeOut */
+  --duration-accordion:180ms; /* @kind other */         /* expand/collapse */
+  --duration-dots:200ms; /* @kind other */              /* onboarding dot width */
+  --duration-page:280ms; /* @kind other */              /* onboarding page swipe */
+}

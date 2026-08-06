@@ -1,0 +1,60 @@
+:root{
+  /* ── Brand — the only orange in the product ─────────────────── */
+  --tq-brand:#E8441F;
+  --tq-brand-pressed:#B8330F;
+  --tq-brand-tint:#FCEAE4;
+  --tq-brand-disabled-label:#E8B29E;
+
+  /* ── Warm neutrals — exactly three text levels ──────────────── */
+  --tq-ink:#16130F;
+  --tq-ink-muted:#57534E;
+  --tq-ink-subtle:#8E877F;
+  --tq-surface:#FFFFFF;
+  --tq-canvas:#F6F4F1;
+  --tq-fill:#EFEBE5;
+  --tq-line:#E7E2DB;
+  --tq-line-strong:#E0DAD2;
+
+  /* ── State — the condition of the car, never a control ─────── */
+  --tq-state-good:#157F5A;
+  --tq-state-good-tint:#E4F1EB;
+  --tq-state-good-text:#0F5F44;
+  --tq-state-warn:#A9761B;
+  --tq-state-warn-tint:#F7EEDD;
+  --tq-state-bad:#8F2B1F;
+  --tq-state-bad-tint:#F6E3DF;
+
+  /* ── Semantic aliases ──────────────────────────────────────── */
+  --text-primary:var(--tq-ink);
+  --text-secondary:var(--tq-ink-muted);
+  --text-tertiary:var(--tq-ink-subtle);
+  --text-on-brand:#FFFFFF;
+  --text-link:var(--tq-brand);
+  --text-danger:var(--tq-state-bad);
+
+  --bg-page:var(--tq-canvas);
+  --surface-card:var(--tq-surface);
+  --surface-fill:var(--tq-fill);
+  --surface-header:var(--tq-surface);
+  --surface-inverse:var(--tq-ink);
+
+  --border-default:var(--tq-line);
+  --border-field:var(--tq-line-strong);
+  --border-focus:var(--tq-brand);
+
+  --action-primary-bg:var(--tq-brand);
+  --action-primary-bg-pressed:var(--tq-brand-pressed);
+  --action-primary-fg:#FFFFFF;
+  --action-primary-disabled-bg:var(--tq-brand-tint);
+  --action-primary-disabled-fg:var(--tq-brand-disabled-label);
+  --action-secondary-bg:var(--tq-surface);
+  --action-secondary-bg-pressed:var(--tq-canvas);
+  --action-secondary-fg:var(--tq-ink);
+  --action-secondary-border:var(--tq-line-strong);
+  --action-overlay:rgba(232,68,31,.08);
+
+  --tint-attention:var(--tq-brand-tint);
+  --tint-attention-fg:var(--tq-brand-pressed);
+  --tile-bg:var(--tq-fill);
+  --tile-fg:var(--tq-ink-muted);
+}

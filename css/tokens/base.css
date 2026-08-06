@@ -1,0 +1,9 @@
+/* Minimal page reset — consumers get the product's page background,
+   type defaults and link colors without writing any of it themselves. */
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg-page);color:var(--text-primary);font:var(--type-body-weight) var(--type-body-size)/var(--type-body-lh) var(--font-sans);-webkit-font-smoothing:antialiased}
+a{color:var(--text-link);text-decoration:none;font-weight:var(--fw-semibold)}
+a:hover{color:var(--tq-brand-pressed)}
+::selection{background:rgba(232,68,31,.2)}
+:focus-visible{outline:2px solid var(--border-focus);outline-offset:2px}
+.tq-icon{font-family:"Material Symbols Outlined";font-weight:400;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:"liga";-webkit-font-smoothing:antialiased;user-select:none}

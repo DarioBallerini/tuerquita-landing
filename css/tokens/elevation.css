@@ -1,0 +1,9 @@
+:root{
+  /* Flat by rule: borders carry separation, not shadows. The pinned
+     action bar is the single exception in the whole product. */
+  --shadow-none:none;
+  --shadow-action-bar:0 -2px 12px rgba(0,0,0,.06);
+  --border-hairline:1px solid var(--border-default);
+  /* Photo hero protection gradient (bottom → top). */
+  --scrim-photo:linear-gradient(to top,#08090CDC,#08090C58,#08090C05); /* @kind color */
+}

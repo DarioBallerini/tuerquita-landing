@@ -1,0 +1,8 @@
+/* Inter 400/500/600 — the app loads Inter through the google_fonts package
+   (lib/config/theme.dart, GoogleFonts.inter). No binaries ship in the repo,
+   so consumers get the same faces from the Google Fonts CDN. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Iconography: Material Symbols Outlined — the web build of the same
+   Material icon set Flutter's Icons.* draws from. */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap");

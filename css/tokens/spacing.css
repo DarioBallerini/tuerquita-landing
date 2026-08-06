@@ -1,0 +1,18 @@
+:root{
+  /* 4pt scale — the app declares exactly these steps. */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-6:24px;
+  --space-8:32px;
+
+  --page-gutter:16px;   /* side margin on every screen */
+  --card-gap:12px;      /* vertical gap between stacked cards */
+  --card-padding:16px;  /* dashboard cards */
+  --row-padding:14px;   /* list/accordion rows */
+  --touch-target:44px;  /* minimum tap size, never smaller */
+  --nav-height:64px;
+  --header-height:56px;
+  --action-bar-height:84px; /* 52 button + 32 padding */
+}

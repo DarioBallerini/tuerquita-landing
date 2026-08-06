@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuerquita — el mantenimiento de tu auto, en un solo lugar</title>
+<meta name="description" content="Tuerquita anota los services, las cargas de nafta y el kilometraje de tu auto, te avisa por mail cuándo corresponde el próximo service y responde tus dudas con el manual que subís vos. App para Android.">
+<link rel="canonical" href="https://tuerquita.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tuerquita">
+<meta property="og:title" content="Tuerquita — el mantenimiento de tu auto, en un solo lugar">
+<meta property="og:description" content="Tuerquita anota los services, las cargas de nafta y el kilometraje de tu auto, te avisa por mail cuándo corresponde el próximo service y responde tus dudas con el manual que subís vos. App para Android.">
+<meta property="og:image" content="https://tuerquita.com/assets/app_icon.png">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#E8441F">
+<link rel="icon" href="assets/logo.svg">
+<link rel="apple-touch-icon" href="assets/app_icon.png">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg-page); color: var(--text-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  a { color: var(--text-link); text-decoration: none; }
+  a:hover { color: var(--tq-brand-pressed); }
+  img { max-width: 100%; }
+  nav a:hover, footer a:hover { color: var(--tq-brand-pressed); }
+  [data-faq] > div:first-child:hover { background: var(--tq-canvas); }
+  [data-cta="play"] a:hover { background: var(--action-primary-bg-pressed); color: var(--action-primary-fg); }
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: var(--bg-page)">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: var(--surface-card); border-bottom: 1px solid var(--border-default)">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+      <a href="#" style="display: flex; align-items: center; gap: 10px; color: var(--text-primary)">
+        <img src="assets/logo.svg" alt="Tuerquita" style="width: 30px; height: 30px; border-radius: 8px; display: block">
+        <span style="font: 600 17px/1 var(--font-sans); letter-spacing: -0.01em">Tuerquita</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end">
+        <a href="#funciona" style="padding: 10px 12px; font: 500 15px/1 var(--font-sans); color: var(--text-secondary)">Cómo funciona</a>
+        <a href="#manual" style="padding: 10px 12px; font: 500 15px/1 var(--font-sans); color: var(--text-secondary)">El manual</a>
+        <a href="#preguntas" style="padding: 10px 12px; font: 500 15px/1 var(--font-sans); color: var(--text-secondary)">Preguntas</a>
+        <a href="#descargar" style="padding: 10px 12px; font: 500 15px/1 var(--font-sans); color: var(--text-link)">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="max-width: 1120px; margin: 0 auto; padding: clamp(40px, 7vw, 88px) 24px clamp(32px, 5vw, 64px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: center">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: var(--tq-brand-tint); color: var(--tint-attention-fg); border-radius: var(--radius-full); padding: 6px 12px; font: 500 11px/1 var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em">Android · en beta</div>
+        <h1 style="margin: 20px 0 0; font: 600 clamp(34px, 5.4vw, 54px)/1.06 var(--font-sans); letter-spacing: -0.025em; text-wrap: balance">Todo lo que le hacés a tu auto, en un solo lugar.</h1>
+        <p style="margin: 20px 0 0; max-width: 30em; font: 400 clamp(16px, 1.6vw, 18px)/1.55 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Los services, las cargas de nafta y el kilometraje quedan anotados. Tuerquita calcula cuándo corresponde el próximo service y te avisa por mail antes de que se te pase.</p>
+        <div style="margin-top: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px">
+          <div data-cta="play" style="display: none">
+            <a href="#" data-play-link target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: var(--radius-full); background: var(--action-primary-bg); color: var(--action-primary-fg); font: 600 16px/1 var(--font-sans)">
+              <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; line-height: 1">shop</span>Descargar en Google Play</a>
+            <p style="margin: 0; font: 400 13px/1.45 var(--font-sans); color: var(--text-tertiary)">Gratis mientras esté en beta. Para Android 8 o más nuevo.</p>
+          </div>
+          <div data-cta="soon" style="display: contents">
+            <div style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: var(--radius-full); background: var(--surface-card); border: 1px solid var(--action-secondary-border); color: var(--text-primary); font: 600 16px/1 var(--font-sans)">
+              <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; line-height: 1; color: var(--tq-brand)">shop</span>Pronto en Google Play</div>
+            <p style="margin: 0; max-width: 34em; font: 400 13px/1.45 var(--font-sans); color: var(--text-tertiary); text-wrap: pretty">Todavía no está publicada. Cuando salga, este botón lleva directo a la ficha de la app.</p>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <div style="width: min(300px, 78vw); border: 1px solid var(--border-default); border-radius: 34px; padding: 8px; background: var(--surface-card)">
+          <img src="assets/screen-inicio.png" alt="Pantalla de inicio de Tuerquita con el auto, el próximo service y los gastos" style="display: block; width: 100%; border-radius: 26px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1120px; margin: 0 auto; padding: clamp(24px, 4vw, 48px) 24px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px">
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 22px">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--tile-bg); display: grid; place-items: center">
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--tile-fg)">menu_book</span>
+        </div>
+        <h3 style="margin: 16px 0 0; font: 600 17px/1.25 var(--font-sans)">La bitácora completa</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.5 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Cada service queda anotado: qué se hizo, en qué taller, a cuántos kilómetros y cuánto costó.</p>
+      </div>
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 22px">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--tile-bg); display: grid; place-items: center">
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--tile-fg)">local_gas_station</span>
+        </div>
+        <h3 style="margin: 16px 0 0; font: 600 17px/1.25 var(--font-sans)">Cuánto rinde de verdad</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.5 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Anotá dos cargas seguidas y Tuerquita empieza a calcular el consumo real, no el del folleto.</p>
+      </div>
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 22px">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--tile-bg); display: grid; place-items: center">
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--tile-fg)">mail</span>
+        </div>
+        <h3 style="margin: 16px 0 0; font: 600 17px/1.25 var(--font-sans)">Avisos por kilómetro</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.5 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Los recordatorios salen del kilometraje que anotás, no de una fecha inventada. Te llegan por mail.</p>
+      </div>
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 22px">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--tint-attention); display: grid; place-items: center">
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--tint-attention-fg)">auto_awesome</span>
+        </div>
+        <h3 style="margin: 16px 0 0; font: 600 17px/1.25 var(--font-sans)">El manual, en un chat</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.5 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Subí el PDF del manual de tu auto y preguntale lo que necesites saber.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="funciona" style="max-width: 1120px; margin: 0 auto; padding: clamp(40px, 6vw, 80px) 24px">
+    <p style="margin: 0; font: 500 11px/1 var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-tertiary)">Cómo funciona</p>
+    <h2 style="margin: 14px 0 0; max-width: 22em; font: 600 clamp(26px, 3.4vw, 38px)/1.15 var(--font-sans); letter-spacing: -0.02em; text-wrap: balance">Tres cosas de tu parte. El resto lo hace la app.</h2>
+    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 24px">
+        <span style="display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: var(--radius-full); background: var(--tq-brand); color: var(--action-primary-fg); font: 600 15px/1 var(--font-sans); font-variant-numeric: tabular-nums">1</span>
+        <h3 style="margin: 18px 0 0; font: 600 19px/1.25 var(--font-sans)">Cargá tu auto</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.55 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Marca, modelo, año y el kilometraje de hoy. Si querés, una foto. Con eso ya alcanza para arrancar.</p>
+      </div>
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 24px">
+        <span style="display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: var(--radius-full); background: var(--tq-brand); color: var(--action-primary-fg); font: 600 15px/1 var(--font-sans); font-variant-numeric: tabular-nums">2</span>
+        <h3 style="margin: 18px 0 0; font: 600 19px/1.25 var(--font-sans)">Anotá lo que le hacés</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.55 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Un service, una carga de nafta, un ruido raro. Fecha, kilometraje y lo que gastaste. Treinta segundos.</p>
+      </div>
+      <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 24px">
+        <span style="display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: var(--radius-full); background: var(--tq-brand); color: var(--action-primary-fg); font: 600 15px/1 var(--font-sans); font-variant-numeric: tabular-nums">3</span>
+        <h3 style="margin: 18px 0 0; font: 600 19px/1.25 var(--font-sans)">Dejá que te avise</h3>
+        <p style="margin: 8px 0 0; font: 400 15px/1.55 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">Tuerquita cruza el kilometraje con el último service y te manda un mail cuando el próximo se acerca.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="manual" style="max-width: 1120px; margin: 0 auto; padding: clamp(16px, 3vw, 32px) 24px clamp(40px, 6vw, 72px)">
+    <div style="background: var(--surface-inverse); border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 8px; color: var(--tq-brand); font: 500 11px/1 var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em">
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 16px; font-variation-settings: 'FILL' 1">auto_awesome</span>Preguntale al manual</div>
+        <h2 style="margin: 16px 0 0; color: #FFFFFF; font: 600 clamp(26px, 3.4vw, 38px)/1.15 var(--font-sans); letter-spacing: -0.02em; text-wrap: balance">Responde con lo que dice tu manual, no con lo que hay en internet.</h2>
+        <p style="margin: 16px 0 0; max-width: 30em; font: 400 16px/1.6 var(--font-sans); color: rgba(255,255,255,.68); text-wrap: pretty">Subí el PDF del manual de tu auto una vez. Después preguntá qué aceite lleva, cada cuántos kilómetros va la distribución o qué significa esa luz del tablero. Si el manual no lo dice, Tuerquita te lo aclara en vez de inventarlo.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="align-self: flex-end; max-width: 84%; background: var(--tq-brand); color: #FFFFFF; border-radius: 20px 20px 6px 20px; padding: 12px 16px; font: 400 15px/1.5 var(--font-sans)">¿Qué aceite lleva y cada cuánto lo cambio?</div>
+        <div style="align-self: flex-start; max-width: 90%; background: rgba(255,255,255,.08); color: rgba(255,255,255,.92); border-radius: 20px 20px 20px 6px; padding: 12px 16px; font: 400 15px/1.55 var(--font-sans)">El manual indica aceite 0W-20 sintético y un cambio cada 10.000 km o 12 meses, lo que ocurra primero. Para uso severo baja a 5.000 km.</div>
+        <p style="margin: 4px 0 0; text-align: right; font: 400 13px/1.4 var(--font-sans); color: rgba(255,255,255,.45)">Manual del propietario · página 214</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preguntas" style="max-width: 800px; margin: 0 auto; padding: clamp(24px, 4vw, 48px) 24px clamp(40px, 6vw, 72px)">
+    <h2 style="margin: 0 0 24px; font: 600 clamp(26px, 3.4vw, 34px)/1.15 var(--font-sans); letter-spacing: -0.02em">Preguntas</h2>
+    <div style="display: flex; flex-direction: column; gap: 10px">
+
+      <div data-faq="" style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; min-height: 44px; cursor: pointer">
+          <span style="font: 600 17px/1.3 var(--font-sans)">¿Está en iPhone?</span>
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--text-tertiary); transition: transform 180ms var(--ease-out); transform: rotate(0deg)">expand_more</span>
+        </div>
+        <div style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 180ms var(--ease-out)">
+          <div style="overflow: hidden">
+            <p style="margin: 0; border-top: 1px solid var(--border-default); padding: 14px 20px 18px; font: 400 15px/1.6 var(--font-sans); color: var(--text-secondary)">Todavía no. Tuerquita arrancó en Android y la versión para iOS está en camino, pero no hay fecha. Cuando exista, va a estar acá.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-faq="" style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; min-height: 44px; cursor: pointer">
+          <span style="font: 600 17px/1.3 var(--font-sans)">¿Cuánto sale?</span>
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--text-tertiary); transition: transform 180ms var(--ease-out); transform: rotate(0deg)">expand_more</span>
+        </div>
+        <div style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 180ms var(--ease-out)">
+          <div style="overflow: hidden">
+            <p style="margin: 0; border-top: 1px solid var(--border-default); padding: 14px 20px 18px; font: 400 15px/1.6 var(--font-sans); color: var(--text-secondary)">Nada mientras esté en beta. Más adelante va a haber un plan pago con funciones extra, y el historial que hayas cargado hasta entonces sigue siendo tuyo y accesible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-faq="" style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; min-height: 44px; cursor: pointer">
+          <span style="font: 600 17px/1.3 var(--font-sans)">¿Cómo sabe cuándo toca el próximo service?</span>
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--text-tertiary); transition: transform 180ms var(--ease-out); transform: rotate(0deg)">expand_more</span>
+        </div>
+        <div style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 180ms var(--ease-out)">
+          <div style="overflow: hidden">
+            <p style="margin: 0; border-top: 1px solid var(--border-default); padding: 14px 20px 18px; font: 400 15px/1.6 var(--font-sans); color: var(--text-secondary)">Por el kilometraje. Cada vez que anotás una carga o un service actualizás el odómetro, y Tuerquita compara contra el intervalo del service anterior. Cuando falta poco, te llega un mail.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-faq="" style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; min-height: 44px; cursor: pointer">
+          <span style="font: 600 17px/1.3 var(--font-sans)">¿Sirve para más de un auto?</span>
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--text-tertiary); transition: transform 180ms var(--ease-out); transform: rotate(0deg)">expand_more</span>
+        </div>
+        <div style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 180ms var(--ease-out)">
+          <div style="overflow: hidden">
+            <p style="margin: 0; border-top: 1px solid var(--border-default); padding: 14px 20px 18px; font: 400 15px/1.6 var(--font-sans); color: var(--text-secondary)">Sí. Podés tener varios autos y cambiar de uno a otro desde arriba de cada pantalla. Cada uno lleva su propia bitácora, sus cargas y sus recordatorios.</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-faq="" style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); overflow: hidden">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; min-height: 44px; cursor: pointer">
+          <span style="font: 600 17px/1.3 var(--font-sans)">¿Qué pasa con mis datos?</span>
+          <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; color: var(--text-tertiary); transition: transform 180ms var(--ease-out); transform: rotate(0deg)">expand_more</span>
+        </div>
+        <div style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 180ms var(--ease-out)">
+          <div style="overflow: hidden">
+            <p style="margin: 0; border-top: 1px solid var(--border-default); padding: 14px 20px 18px; font: 400 15px/1.6 var(--font-sans); color: var(--text-secondary)">No se venden ni se comparten con anunciantes. No hay publicidad ni rastreo de terceros. Están para que la app funcione y nada más. Está todo explicado en la <a href="privacidad.html">política de privacidad</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="descargar" style="max-width: 1120px; margin: 0 auto; padding: 0 24px clamp(48px, 7vw, 88px)">
+    <div style="background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 56px); text-align: center">
+      <h2 style="margin: 0 auto; max-width: 20em; font: 600 clamp(26px, 3.4vw, 38px)/1.15 var(--font-sans); letter-spacing: -0.02em; text-wrap: balance">Empezá con el kilometraje de hoy.</h2>
+      <p style="margin: 14px auto 0; max-width: 34em; font: 400 16px/1.6 var(--font-sans); color: var(--text-secondary); text-wrap: pretty">No hace falta tener el historial cargado. Anotá el próximo service y a partir de ahí Tuerquita se acuerda por vos.</p>
+      <div style="margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div data-cta="play" style="display: none">
+          <a href="#" data-play-link target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: var(--radius-full); background: var(--action-primary-bg); color: var(--action-primary-fg); font: 600 16px/1 var(--font-sans)">
+            <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; line-height: 1">shop</span>Descargar en Google Play</a>
+        </div>
+        <div data-cta="soon" style="display: contents">
+          <div style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: var(--radius-full); background: var(--tq-canvas); border: 1px solid var(--action-secondary-border); color: var(--text-primary); font: 600 16px/1 var(--font-sans)">
+            <span class="tq-icon" aria-hidden="true" style="font-family: 'Material Symbols Outlined'; font-size: 22px; line-height: 1; color: var(--tq-brand)">shop</span>Pronto en Google Play</div>
+        </div>
+        <p style="margin: 0; font: 400 13px/1.45 var(--font-sans); color: var(--text-tertiary)">Android por ahora. iOS más adelante.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid var(--border-default); background: var(--surface-card)">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 32px 24px 40px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <img src="assets/logo.svg" alt="" style="width: 26px; height: 26px; border-radius: 7px; display: block">
+        <span style="font: 400 13px/1.4 var(--font-sans); color: var(--text-tertiary)">Tuerquita · hecho en Argentina</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center">
+        <a href="privacidad.html" style="font: 400 13px/1.4 var(--font-sans)">Política de privacidad</a>
+        <a href="mailto:mail@tuerquita.com" style="font: 400 13px/1.4 var(--font-sans)">mail@tuerquita.com</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
